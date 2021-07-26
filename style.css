@@ -1,0 +1,77 @@
+*{
+        font-family: 'Segoe UI';
+}
+
+body{
+        background-color: rgb(253, 218, 178);
+}
+
+.calculator-grid{
+        display: grid;
+        grid-template-rows: 200px repeat(5, 100px);
+        grid-template-columns: repeat(4,100px);
+        grid-template-areas: 
+        "screen screen screen screen";
+       
+}
+
+.center-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+}
+
+.title-h1{
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+}
+
+.sizer-container{
+        width: 400px!important;
+        border: 8px solid #b13800;
+        border-radius: 40px;
+}
+
+.item{
+        background-color: #FC7A1E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 2px solid #F24C00;
+        font-size: 3rem;
+        font-weight: 700;
+}
+
+.item:hover{
+        background-color: #f88e42;
+}
+
+.tela{
+        padding-bottom: 15px;
+        padding-right: 25px;
+        grid-area: screen;
+        background-color: #F9C784;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom: 8px solid #b13800;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 36px;
+        color: black;
+        font-weight: 700;
+}
+
+#equal{
+        border-bottom-right-radius: 30px;
+}
+
+#blank{
+        border-bottom-left-radius: 30px;
+        
+}

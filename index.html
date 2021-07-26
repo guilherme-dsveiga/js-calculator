@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="title-h1">CALCULADORA</div>
+        <div class="center-wrapper">
+                <div class="sizer-container">
+                        <div class="calculator-grid">
+                                <div class="tela" id="screen"></div>
+                                <div class="item" id="clear" onclick="pushToStr('C')">C</div>
+                                <div class="item" id="erase">E</div>
+                                <div class="item" id="percent">%</div>
+                                <div class="item" id="divide" onclick="pushToStr('/')">/</div>
+                                <div class="item" id="nine" onclick="pushToStr('9')">9</div>
+                                <div class="item" id="eight" onclick="pushToStr('8')">8</div>
+                                <div class="item" id="seven" onclick="pushToStr('7')">7</div>
+                                <div class="item" id="multi" onclick="pushToStr('*')">*</div>
+                                <div class="item" id="six" onclick="pushToStr('6')">6</div>
+                                <div class="item" id="five" onclick="pushToStr('5')">5</div>
+                                <div class="item" id="four" onclick="pushToStr('4')">4</div>
+                                <div class="item" id="minus" onclick="pushToStr('-')">-</div>
+                                <div class="item" id="three" onclick="pushToStr('3')">3</div>
+                                <div class="item" id="two" onclick="pushToStr('2')">2</div>
+                                <div class="item" id="one" onclick="pushToStr('1')">1</div>
+                                <div class="item" id="plus" onclick="pushToStr('+')">+</div>
+                                <div class="item" id="blank"></div>
+                                <div class="item" id="zero" onclick="pushToStr('0')">0</div>
+                                <div class="item" id="comma" onclick="pushToStr(',')">,</div>
+                                <div class="item" id="equal" onclick="equalPushed()">=</div>
+                        </div>
+                </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
